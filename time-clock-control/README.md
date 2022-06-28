@@ -4,10 +4,9 @@ It is a front of an time-clock control.
 
 ## Tasks
 
-Home page:
-- [X] navBar
-- [X] footer
-- [X] main
+- [X] Home page
+- [ ] Login page
+- [ ] Sign Up page
 
 ## Development server
 
