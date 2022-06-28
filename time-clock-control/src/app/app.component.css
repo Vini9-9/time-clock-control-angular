@@ -1,0 +1,25 @@
+.btn-primary {
+    background-color: #139DBF;
+}
+
+.btn-secondary {
+    background-color: #25C1E8;
+}
+
+.bkg-primary {
+    background-color: #139DBF;
+}
+
+.bkg-secondary {
+    background-color: #25C1E8;
+}
+
+.center-aligned {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bkg-gray{
+    background-color: #F1F5F4
+}
