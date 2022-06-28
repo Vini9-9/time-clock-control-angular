@@ -1,0 +1,35 @@
+.main-section {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content-greeting {
+    margin-top: 8%;
+}
+
+.text-about{
+    color: #A0A6AB;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 640px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.image-aside{
+    width: 15%;
+}
+
+.start-right {
+    align-self: flex-start;
+}
+
+.start-left {
+    align-self: flex-end;
+}
+
+.demo-title {
+    margin: 15px;
+}
