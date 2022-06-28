@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'time-clock-control';
-  logoHeader = "../assets/logo/click-clock-header.png"; 
+
 }
