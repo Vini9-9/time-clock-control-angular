@@ -3,12 +3,15 @@
     <img src="{{logo}}" alt="logo Click Clock" id="click-clock-nav">
   </a>
   <ul class="nav links" id="nav-links">
-    <li class="nav-item">
+    <li *ngIf="pageUrl != 'login'" class="nav-item">
       <button type="button" class="btn btn-primary" routerLink="/login">
         Login
       </button>
     </li>
-    <li class="nav-item">
+    <li *ngIf="pageUrl != 'signup'" class="nav-item">
+      <span>
+        Don't have an account?
+      </span>
       <button type="button" class="btn btn-secondary">Sign up</button>
     </li>
   </ul>
