@@ -1,6 +1,11 @@
-# TimeClockControl
+# Time-clock Control (Click Clock)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+It is a front of an time-clock control.
+
+## Tasks
+
+Home page:
+- [ ] navBar
 
 ## Development server
 
