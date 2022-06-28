@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css',]
 })
 export class NavBarComponent implements OnInit {
-  @Input() logo: string | undefined;
+  logo: string = "../assets/logo/click-clock-header.png";
   constructor() { }
 
   ngOnInit(): void {
