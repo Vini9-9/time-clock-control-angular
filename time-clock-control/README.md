@@ -5,7 +5,7 @@ It is a front of an time-clock control.
 ## Tasks
 
 Home page:
-- [ ] navBar
+- [X] navBar
 
 ## Development server
 
