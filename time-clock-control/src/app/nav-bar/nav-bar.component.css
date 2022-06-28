@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    background-color: #F1F5F4;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: black
+}
+
+#nav-links{
+    align-content: center;
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+#logo-nav {
+    width: 15% 
+}
+
+.nav {
+    width: 95%;
+    justify-content: flex-end;
+}
+
+#click-clock-nav {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #139DBF;
+}
+
+.btn-secondary {
+    background-color: #25C1E8;
+}
