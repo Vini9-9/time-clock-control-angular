@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'time-clock-control';
+  logoHeader = "../assets/click-clock-header.png"; 
 }
