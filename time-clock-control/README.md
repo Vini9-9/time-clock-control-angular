@@ -6,6 +6,7 @@ It is a front of an time-clock control.
 
 Home page:
 - [X] navBar
+- [X] footer
 
 ## Development server
 
