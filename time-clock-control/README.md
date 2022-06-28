@@ -5,7 +5,7 @@ It is a front of an time-clock control.
 ## Tasks
 
 - [X] Home page
-- [ ] Login page
+- [X] Login page
 - [ ] Sign Up page
 
 ## Development server
