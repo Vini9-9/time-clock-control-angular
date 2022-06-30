@@ -9,6 +9,8 @@ import { MainComponent } from './main/main.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+import { FormDataUserComponent } from './form-data-user/form-data-user.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { LoginPageComponent } from './login-page/login-page.component';
     MainComponent,
     HomePageComponent,
     PageNotFoundComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    SignUpPageComponent,
+    FormDataUserComponent,
   ],
   imports: [
     BrowserModule,

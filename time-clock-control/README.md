@@ -6,7 +6,7 @@ It is a front of an time-clock control.
 
 - [X] Home page
 - [X] Login page
-- [ ] Sign Up page
+- [X] Sign Up page
 
 ## Development server
 
