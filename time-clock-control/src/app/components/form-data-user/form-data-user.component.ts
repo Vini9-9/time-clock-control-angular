@@ -1,8 +1,7 @@
-import { HttpErrorResponse } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { User } from '../entities/users/users.model';
-import { UserService } from '../entities/users/users.service';
+import { User } from '../../entities/users.model';
+import { UserService } from '../../services/users.service';
 
 @Component({
   selector: 'app-form-data-user',
@@ -58,10 +57,13 @@ export class FormDataUserComponent implements OnInit {
   login() {
     this.userService.authUser(this.userEmail, this.userPassword).subscribe
     (
-      answer => {
+      response => {
         console.log("user logged!")
-        console.log(answer)
+        console.log(response)
         this.messageError = undefined;
+        // api.defaults.headers.common = { 'Authorization': `Bearer ${response.token}` }
+        // AsyncStorage.setItem('@controle-ponto:user', JSON.stringify(response.user))
+        // AsyncStorage.setItem('@controle-ponto:token', response.token)
       }, errors => {
         console.error('Something went bad');
         this.messageError = errors.error.message;
