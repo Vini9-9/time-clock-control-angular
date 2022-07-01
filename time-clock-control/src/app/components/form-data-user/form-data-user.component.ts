@@ -64,6 +64,7 @@ export class FormDataUserComponent implements OnInit {
         this.messageError = undefined;
       }, errors => {
         console.error('Something went bad');
+        console.log(errors)
         this.messageError = errors.error.message;
       }
     );
