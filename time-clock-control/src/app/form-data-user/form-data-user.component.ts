@@ -1,3 +1,4 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from '../entities/users/users.model';
@@ -10,7 +11,8 @@ import { UserService } from '../entities/users/users.service';
 })
 export class FormDataUserComponent implements OnInit {
   @Input() title: string | undefined;
-  pageUrl: string | undefined;
+  pageUrl: string = '';
+  messageError: string | undefined;
 
   userName = '';
   userEmail = '';
@@ -23,6 +25,18 @@ export class FormDataUserComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  submit(){
+    this.userEmail = this.userEmail.trim();
+    if(this.pageUrl.includes('signup')){
+      this.signup()
+      return
+    }
+    if(this.pageUrl.includes('login')){
+      this.login()
+      return
+    }
+  }
+
   signup() {
     const newUser:User = {
       name: this.userName,
@@ -33,9 +47,24 @@ export class FormDataUserComponent implements OnInit {
     (
       () => {
         console.log("user saved!")
+        this.messageError = undefined;
       }, errors => {
         console.error('Something went bad');
-        console.log(errors);
+        this.messageError = errors.error.message;
+      }
+    );
+  }
+
+  login() {
+    this.userService.authUser(this.userEmail, this.userPassword).subscribe
+    (
+      answer => {
+        console.log("user logged!")
+        console.log(answer)
+        this.messageError = undefined;
+      }, errors => {
+        console.error('Something went bad');
+        this.messageError = errors.error.message;
       }
     );
   }
