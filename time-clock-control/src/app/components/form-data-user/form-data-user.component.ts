@@ -1,3 +1,4 @@
+import { AuthService } from 'src/app/services/auth.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from '../../entities/users.model';
@@ -17,7 +18,7 @@ export class FormDataUserComponent implements OnInit {
   userEmail = '';
   userPassword = '';
   
-  constructor(private router: Router, private userService: UserService) {
+  constructor(private router: Router, private userService: UserService, private authService: AuthService) {
     this.pageUrl = router.url.replace('/','');
    }
 
@@ -55,15 +56,12 @@ export class FormDataUserComponent implements OnInit {
   }
 
   login() {
-    this.userService.authUser(this.userEmail, this.userPassword).subscribe
+    this.authService.authUser(this.userEmail, this.userPassword).subscribe
     (
       response => {
         console.log("user logged!")
         console.log(response)
         this.messageError = undefined;
-        // api.defaults.headers.common = { 'Authorization': `Bearer ${response.token}` }
-        // AsyncStorage.setItem('@controle-ponto:user', JSON.stringify(response.user))
-        // AsyncStorage.setItem('@controle-ponto:token', response.token)
       }, errors => {
         console.error('Something went bad');
         this.messageError = errors.error.message;
