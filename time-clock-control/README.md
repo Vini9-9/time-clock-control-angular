@@ -4,9 +4,14 @@ It is a front of an time-clock control.
 
 ## Tasks
 
+Front:
 - [X] Home page
 - [X] Login page
 - [X] Sign Up page
+
+Back for front:
+- [X] Sign up page
+- [ ] Login page
 
 ## Development server
 
